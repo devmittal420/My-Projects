@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.slider-box {
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+@layer utilities {
+  .rotate-y-0 {
+    transform: rotateY(0deg) translateZ(400px);
+  }
+  .rotate-y-72 {
+    transform: rotateY(72deg) translateZ(400px);
+  }
+  .rotate-y-144 {
+    transform: rotateY(144deg) translateZ(400px);
+  }
+  .rotate-y-216 {
+    transform: rotateY(216deg) translateZ(400px);
+  }
+  .rotate-y-288 {
+    transform: rotateY(288deg) translateZ(400px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
