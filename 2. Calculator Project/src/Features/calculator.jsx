@@ -10,31 +10,7 @@ import {
 } from "./calculatorslice.js";
 
 const Calculator = () => {
-  // const [calculatorColor, setCalculatorColor] = useState("#FFDAB9");
   const [showCover, setShowCover] = useState(true);
-  // const colors = [
-  //   "#FF6347",
-  //   "#40E0D0",
-  //   "#1E90FF",
-  //   "#32CD32",
-  //   "#FFD700",
-  //   "#DC143C",
-  //   "#8A2BE2",
-  //   "#FF8C00",
-  //   "#FF1493",
-  //   "#00CED1",
-  //   "#FF4500",
-  //   "#98FB98",
-  //   "#7FFF00",
-  //   "#8B0000",
-  //   "#A52A2A",
-  //   "#D2691E",
-  //   "#BA55D3",
-  //   "#00BFFF",
-  //   "#ADFF2F",
-  //   "#FFDAB9",
-  // ];
-
   const calculateState = useSelector((state) => state.calculator);
   const dispatch = useDispatch();
 
@@ -74,10 +50,6 @@ const Calculator = () => {
   const onHandleBackspace = () => {
     dispatch(backspace());
   };
-  // const onHandleToggle = () => {
-  //   const randomColor = Math.floor(Math.random() * colors.length);
-  //   setCalculatorColor(colors[randomColor]);
-  // };
   const toggleCover = () => {
     setShowCover((prev) => !prev);
   };
@@ -86,7 +58,6 @@ const Calculator = () => {
     <div className="bg-slate-300 min-h-screen flex justify-center items-center fixed left-0 right-0 ">
       <div
         className={`relative w-[500px] h-[500px] max-w-sm p-6 rounded-3xl shadow-md bg-slate-400`}
-        // style={{ backgroundColor: calculatorColor }}
       >
         {/* Sliding Cover */}
         <div
