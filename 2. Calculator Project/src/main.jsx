@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
-import Calculator from "./assets/Features/calculator.jsx";
-import calculatorStore from "./calculatorStore.js";
+import CalculatorStore from "./calculatorStore.js"
+import Calculator from "./Features/calculator.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <Provider store={calculatorStore}>
+  <Provider store={CalculatorStore}>
     <Calculator />
   </Provider>
 );
