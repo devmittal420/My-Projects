@@ -75,12 +75,14 @@ const Calculator = () => {
             backgroundPosition: "center",
           }}
         >
-          <button
-            className="absolute top-4 right-4 bg-gray-300 hover:bg-gray-400 duration-200 text-white p-2 rounded-3xl"
-            onClick={toggleCover}
-          >
-            {showCover ? "Open Calculator" : "Close Calculator"}
-          </button>
+          {showCover && (
+            <button
+              className="absolute top-4 right-4 bg-gray-300 hover:bg-gray-400 duration-200 text-white p-2 rounded-3xl"
+              onClick={toggleCover}
+            >
+              {showCover ? "Open Calculator" : "Close Calculator"}
+            </button>
+          )}
         </div>
 
         {!showCover && (
