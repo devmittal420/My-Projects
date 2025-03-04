@@ -33,7 +33,7 @@ const Bicycle = () => {
     : bicycle;
 
   return (
-    <div className="p-20 mt-4 bg-blue-100">
+    <div className="p-20 mt-4">
       <Header />
       <div className="grid gap-1">
         {searchBicycles.length > 0 ? (

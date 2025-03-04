@@ -1,8 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
-import StopwatchContext from "./Pages/context/stopwatchContext";
 import StopwatchHomepage from "./Pages/Homepage/stopwatchhomepage";
 import "./index.css";
+import StopwatchContext from "./Pages/Context/stopwatchContext";
 
 const router = createBrowserRouter([
   {

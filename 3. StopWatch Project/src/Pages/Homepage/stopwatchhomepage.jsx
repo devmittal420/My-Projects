@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { stopwatchContext } from "../context/stopwatchContext";
+import { stopwatchContext } from "../Context/stopwatchContext";
 
 const StopwatchHomepage = () => {
   const { timeFormat, stopwatch, onstartwatch, onStopwatch, onResetwatch } =
